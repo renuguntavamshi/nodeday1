@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.transition{
+   color:rgb(17, 17, 6);
+    font-size: 25px;
+    transition-property: font-size ;
+    transition-delay: 5s;
+}
+.transition:hover{
+    font-size:55px;
+}
+</style>
+<body>
+   <div class="transition">
+<pre>    What is Nodejs
+Nodejs is asynchronous,runtime js environment.It is used to run js outside the browser.It can be used as Backend
+The main advantage is it uses asynchronous architecture ,so when it takes request,even without sending the response,it can
+take multiple request and send response when its task is completed
+
+Why does nodejs perform aynchronous
+Bcaz it performs non-blocking operations,it will continously accept requests,i.e irrespective of wheather the response is received or not
+
+What are blocking and non-blocking operations
+blocking operations wait until the certain operation is finished
+
+What is mean by open source
+Any one can access it for free
+Cross platform means different devices can use it ,irresepective of which platform it is..
+
+
+What is npm
+Npm is a library and registry for installing js modules .We can install some thousands of modules using npm.It is opensource 
+
+Two main features of npm 
+It  works as a command line utility to install packages
+It works as an Online repository for node.js packages/modules Where 
+everyone can share Tools written in Javascript
+
+What are modules
+Modules are reusable code 
+Instead of Creating functionality from the scratch ,we can import it and use it 
+
+Require keywod 
+require() keyword is a built-in function to include external modules that are present in separate files. or elese  require() statement basically reads a JavaScript file, and then 
+executes it, and then proceeds to return the export object
+
+Different types of Modules
+Core 				Local
+Third Party			User-defined
+Built-in Module,
+
+
+HTTP   				vs HTTPs
+Application layer		Transport Layer
+without Security		With Security
+no encryption			encryption
+
+Implementation of HTTP
+const http=require('http');
+
+
+let app=http.createServer((req,res)=>{
+console.log(req.url);
+});
+
+
+app.listen(3000,()=>{
+console.log("Server listening")
+}
+
+
+Different http methods
+Get-To read data from server
+Post-To Create data to the server
+Patch-To Udpate the part of resources
+Put=To updata the entrie resource
+Delete-To delete the data
+
+</pre>
+   </div>
+</body>
+</html>
